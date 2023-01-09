@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Mini Game</title>
+</head>
+<body>
+    <div class="main-container">
+        <h1 class="heading">Unblock the Blockchain.</h1>
+        <p class="text-content">
+            Solve this puzzle and show us your proof-of-awesomeness.
+        </p>
+        <div class="game-container">
+            <div class="top-part">
+                <div class="circle circle-1">
+                    <img src="assets/crypto.png">
+                </div>
+                <div class="line line-1"></div>
+                <div class="circle circle-2">
+                    <img src="assets/Vector 2.png" class="img-lock">
+                    <img src="assets/Vector 4.png" class="img-unlock">
+                </div>
+                <img class="arrow-1" src="assets/Polygon 6.png">
+                <img class="arrow-1 arrow-1-copy" src="assets/Polygon 6 - Copy.png">
+                <div class="line line-2"></div>
+                <div class="circle circle-3">
+                    <img src="assets/Vector 1.png" class="two-pipe" onclick="firstLineGlow()">
+                </div>
+                <div class="line line-3"></div>
+            </div>
+            <div class="vertical-line"></div>
+            <img class="arrow-2" src="assets/Polygon 5.png">  
+            <img class="arrow-2 arrow-2-copy" src="assets/Polygon 5 - Copy.png"> 
+            <div class="vertical-line vline-1"></div>
+            <div class="down-part">
+                <div class="circle circle-4">
+                    <img src="assets/servers 1.png">
+                </div>
+                <div class="line line-4"></div>
+                <div class="circle circle-5">
+                    <img src="assets/Vector.png" class="three-pipe" onclick="manageGlow(this)">
+                </div>
+                <div class="line line-5"></div>
+            </div>
+        </div>
+        <div class="congrats-container">
+            <h1 class="congrats-title">CONGRATULATIONS!</h1>
+            <div class="gift">
+                <img src="assets/Vector (1).png">
+            </div>
+            <p class="coupon-text">
+                You get $50 worth free BTC on your next transaction.
+            </p>
+            <button>Get the reward!</button>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

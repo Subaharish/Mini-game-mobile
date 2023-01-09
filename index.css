@@ -1,0 +1,414 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'Gilmer Heavy';
+    src: url('assets/fonts/Gilmer\ Heavy.otf');
+}
+
+@font-face {
+    font-family: 'Gilmer Regular';
+    src: url('assets/fonts/Gilmer\ Regular.otf');
+}
+@font-face {
+    font-family: 'Gilmer Bold';
+    src: url('assets/fonts/Gilmer\ Bold.otf');
+}
+.main-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    background-color: #000;
+    height: 100vh;
+    color: aliceblue;
+}
+.heading{
+    margin-top: 10%;
+    font-family: 'Gilmer Heavy';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 2.5rem;
+    line-height: 60px;
+    text-align: center;
+    color: #FFFFFF;
+    text-shadow: 5px 3px 4px rgba(77, 213, 99, 0.76);
+}
+.text-content{
+    margin-top: 10px;
+    width: 55%;
+    font-family: 'Gilmer Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.3rem;
+    line-height: 30px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.game-container{
+    position: relative;
+    margin-top: 5%;
+    /* background-color: aqua; */
+    width: 600px;
+    max-width: 600px;
+    height: 250px;
+    /* padding-left: 60px;
+    padding-right: 10px; */
+}
+/* ----------------------------------Top Part------------------------------------ */
+.top-part{
+    width: 100%;
+    /* background-color: greenyellow; */
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.circle{
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(292.53deg, #FF6767 31.56%, rgba(255, 129, 129, 0.75) 97.92%);
+    border-radius: 100px;
+    box-shadow: 0px 0px 30px  #FF6767;
+    /* transform: rotate(90deg); */
+    z-index: 1;
+}
+.circle-2{
+    position: relative;
+    /* left: -35px; */
+    width: 50px;
+    height: 50px;
+    /* border-radius: 100px; */
+    background: linear-gradient(292.53deg, #7D67FF 31.56%, rgba(147, 129, 255, 0.75) 97.92%);
+    box-shadow: 0px 0px 30px  #7D67FF;
+}
+.circle-3{
+    position: relative;
+    left: -10px;
+}
+.circle img{
+    width: 35px;
+    height: 35px;
+}
+.circle-2 img{
+    width: 20px;
+    height: 30px;
+}
+.circle-3 img{
+    width: 15px;
+}
+.arrow-1{
+    z-index: 1;
+    position: relative;
+    /* left: -45px; */
+    width: 10px;
+
+}
+.line{
+    position: relative;
+    background: #91E384;
+    width: 80px;
+    height: 3px;
+    /* border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 0px; */
+    /* transform: matrix(1, 0, 0, -1, 0, 0); */
+}
+.line-1{
+    /* left: -4%; */
+    left: -25px;
+    width: 120px;
+}
+.line-2{
+    z-index: 2;
+    /* left: -60px; */
+    width: 90px;
+}
+.line-3{
+    left: -40px;
+    width: 140px;
+}
+
+
+
+
+/* ----------------------------------Top Part------------------------------------ */
+.vertical-line{
+    position: relative;
+    top:-52px;
+    left: -40px;
+    background-color:#91E384;
+    width: 3px; 
+    height: 153px;
+    float: right;
+}
+/* ----------------------------------Down Part------------------------------------ */
+.down-part{
+    display: inline-flex;
+    /* background-color: beige; */
+    margin-top: 80px;
+    padding-left: 5px;
+    justify-content: space-around;
+    align-items: center;
+}
+.arrow-2{
+    z-index: 1;
+    width: 15px;
+    position: relative;
+    /* top:-50px;
+    left: 161px; */
+}
+.circle-4{
+    /* z-index: 1; */
+    position: relative;
+    left: 0;
+}
+.circle-4 img{
+    width: 26px;
+    height: 26px;
+}
+.circle-5{
+    position: relative;
+    left: -12px;
+}
+.circle-5 img{
+    /* transform-origin: center; */
+    width: 40px;
+    height: 35px;
+}
+.vline-1{
+    position: relative;
+    top:-48px;
+    left:10px;
+    float: left;
+    height: 60px;
+}
+.line-4{
+    width: 120px;
+}
+.line-5{
+    width: 300px;
+}
+/* ----------------------------------Down Part------------------------------------ */
+/* --------------------------------Congrats Container----------------------------- */
+.congrats-container{
+    margin-top: 15%;
+}
+.congrats-title{
+    font-family: 'Gilmer Heavy';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 2.5rem;
+    line-height: 90px;
+    text-align: center;
+    color: #FFFFFF;
+    text-shadow: 5px 3px 4px rgba(77, 213, 99, 0.76);
+}
+.gift{
+    margin: 0 auto;
+    margin-top: 2%;
+    display: flex;
+    width: 150px;
+    height: 150px;
+    background: linear-gradient(292.53deg, #7D67FF 31.56%, rgba(147, 129, 255, 0.75) 97.92%);
+    box-shadow: 0px 0px 30px  #7D67FF;
+    border-radius: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+.coupon-text{
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 80%;
+    font-family: 'Gilmer Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 45px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.gift img{
+    width: 70px;
+    height: 70px;
+}
+button{
+    width: 50%;
+    /* height: 97px; */
+    border: none;
+    margin: 0 auto;
+    margin-top: 25px;
+    background: #91E384;
+    border-radius: 70px;
+    font-family: 'Gilmer Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 53px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.04em;
+
+    color: #000000;
+}
+/* --------------------------------Congrats Container----------------------------- */
+.glow{
+    /* background-color: aqua; */
+    box-shadow: 0px 0px 10px 2px #91E384;
+}
+.three-pipe{
+    transform:rotate(0deg);
+    transform-origin: center;
+}
+
+@media (max-width: 600px) {
+    .heading{
+        margin-top: 25%;
+        font-size: 1.5rem;
+        line-height: 60px;
+    }
+    .text-content{
+        margin-top: 10px;
+        width: 80%;
+        font-size: 1rem;
+        line-height: 30px;
+    }
+    .game-container{
+        /* width: 80%; */
+        margin-top: 15%;
+        max-width: 300px;
+    }
+    .top-part{
+        padding-left: 10px;
+    }
+    .down-part{
+        margin-top: 50px;
+        padding-left: 10px;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .circle{
+        width: 25px;
+        height: 25px;
+    }
+    .circle-2{
+        left: -12px;
+        width: 70px;
+        height: 70px;
+        border-radius: 100px;
+    }
+    .circle-3{
+        z-index: 2;
+        left: -18px;
+    }
+    .circle-4{
+        left: -15px;
+    }
+    .circle-5{
+        left: -17px;
+    }
+    .circle img{
+        width: 20px;
+        height: 20px;
+    }
+    .circle-2 img{
+        width: 20px;
+        height: 30px;
+    }
+    .circle-3 img{
+        width: 8px;
+        height: 25px;
+    }
+    .circle-4 img{
+        width: 18px;
+        height: 18px;
+    }
+    .circle-5 img{
+        transform-origin: center;
+        position: absolute;
+        top:8px;
+        width: 25px;
+        height: 20px;
+    }
+    .line-1{
+        left: -10px;
+        width: 45px;
+    }
+    .line-2{
+        z-index: 1;
+        left: -17px;
+        width: 55px;
+    }
+    .line-3{
+        left: -19px;
+        width: 55px;
+    }
+    .line-4{
+        left: -15px;
+        width: 60px;
+    }
+    .line-5{
+        left: -17px;
+        width: 160px;
+    }
+    .arrow-1{
+        z-index: 2;
+        left: -15px;
+        width: 7px;
+    }
+    .arrow-2{
+        top:-65px;
+        left: 100px;
+        z-index: 1;
+        width: 10px;
+    }
+    .vertical-line{
+        position: relative;
+        top:-35px;
+        left: -20px;
+        background-color:#91E384;
+        width: 3px; 
+        height: 99px;
+        float: right;
+    }
+    .vline-1{
+        top:6px;
+        left: -191px;
+        height: 45px;
+    }
+    
+    .congrats-container{
+        margin-top: 10%;
+    }
+    .congrats-title{
+        font-size: 1.7rem;
+    }
+    .gift{
+        margin-top: 2%;
+        width: 100px;
+        height: 100px;
+    }
+    .gift img{
+        width: 50px;
+        height: 50px;
+    }
+    .coupon-text{
+        margin-top: 40px;
+        width: 90%;
+        font-size: 1.2rem;
+        line-height: 35px;
+    }
+    button{
+        width: 60%;
+        font-size: 1.2rem;
+        line-height: 45px;
+    }
+}
