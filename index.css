@@ -17,6 +17,9 @@
     font-family: 'Gilmer Bold';
     src: url('assets/fonts/Gilmer\ Bold.otf');
 }
+a{
+    text-decoration: none;
+}
 .main-container{
     display: flex;
     flex-direction: column;
